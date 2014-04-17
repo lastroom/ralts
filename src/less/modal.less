@@ -1,0 +1,59 @@
+div.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: @black;
+    display: none;
+}
+
+div.modal-dialog {
+    padding: 0;
+    margin: 40px auto;
+    background-color: @white;
+    width: (780px - 40px);
+    position: relative;
+    border-bottom: 5px @pink solid;
+    padding: 20px;
+    display: none;
+}
+
+div.modal-header {
+    position: relative;
+    p {
+        margin-bottom: 0;
+    }
+    hr {
+        margin-top: 17px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    button.close {
+        border: none;
+        top: 0px;
+        right: 0px;
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        padding: 0;
+        margin: 0;
+        line-height: 0;
+        .icon-cross:before {
+            color: @gray;
+            font-size: 12px;
+            float: left;
+        }
+    }
+    button.close:hover {
+        .icon-cross:before {
+            color: @pink;
+        }
+    }
+}
+
+div.modal-footer {
+    margin: 0;
+    text-align: right;
+}

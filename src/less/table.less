@@ -1,0 +1,26 @@
+table{
+    background: @medium-gray;
+    color: @gray;
+    border-collapse:collapse;
+    width: 100%;
+    text-align: left;
+}
+
+td {
+    padding: 10px 14px;
+    border-left: 1px @white solid;
+    &:first-child {
+        border-left: none;
+    }
+}
+
+table tr:nth-child(2n) td{
+    background: @white;
+}
+
+th {
+    padding: 10px 14px;
+    padding: 10px 14px;
+    background: @white;
+    font-weight: normal;
+}

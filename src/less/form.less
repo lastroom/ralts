@@ -1,0 +1,100 @@
+.help-text {
+    color: @light-gray;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+    font-size: @medium;
+    width: 176px - 22px;
+    background: @white;
+    .border;
+    color: @gray;
+    font-family: @font-regular;
+    padding: 4px 10px;
+    &:disabled {
+        background: @medium-gray;
+    }
+    &[readonly] {
+        background: @medium-gray;
+    }
+}
+
+input[type="checkbox"] {
+    outline: 0;
+}
+
+input[type="checkbox"]:before {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid red;
+    background: #FFF;
+}
+
+input[type="checkbox"]:after {
+    position: relative;
+    display: block;
+    left: -3px;
+    top: -4px;
+    width: 15px;
+    height: 15px;
+    border: 1px black solid;
+    content: "";
+    background: blue;
+}
+
+input[type="checkbox"]:checked:after {
+    background: green;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: @light-gray;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: @light-gray;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: @light-gray;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: @light-gray;
+}
+
+hr {
+    .border;
+    height: 0;
+    border-bottom: 0;
+}
+
+hr.dashed {
+    border-top: @light-gray 1px dashed;
+}
+
+select {
+    font-size: @medium;
+    width: 176px;
+    background: @white;
+    .border;
+    color: @gray;
+    font-family: @font-regular;
+    padding: 4px 10px!important;
+}
+
+.input-append {
+    display: table;
+    .border;
+    display: inline-block;
+    input {
+        border: 0;
+        width: 176px - 40px;
+        padding: 4px 10px 4px 0;
+        display: table-cell;
+    }
+    span {
+        width: 28px;
+        display: inline-block;
+        text-align: center;
+    }
+}
