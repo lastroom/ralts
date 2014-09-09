@@ -1,0 +1,28 @@
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.vertical-container {
+    display: table;
+    position: static;
+    height: 100%;
+    width: 100%;
+    .vertical-content {
+        display: table-cell;
+        position: static;
+        width: 100%;
+    }
+    .vertical-content.align-top {
+        vertical-align: top;
+    }
+    .vertical-content.align-middle {
+        vertical-align: middle;
+    }
+    .vertical-content.align-bottom {
+        vertical-align: bottom;
+    }
+}

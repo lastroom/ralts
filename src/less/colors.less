@@ -1,24 +1,42 @@
 //Defaults Colors
-@pink: #ea2470;
-@medium-pink: ##555964;
-@dark-pink: #940b3f;
+//Grays
 @gray: #555964;
-@light-gray: #9ea1aa;
-@medium-gray: #e0e1e5;
-@alpha-white: rgba(255, 255, 255, 0.5);
-@white: #fbfbfd;
-@red: #ff3535;
+@gray-light: lighten(@gray, 15%);
+@gray-lighter: #f6f6f8;
+@gray-dark: darken(@gray, 15%);
+@gray-darker: darken(@gray, 30%);
+//Pinks
+@pink: #ea2470;
+@pink-light: lighten(@pink, 15%);
+@pink-lighter: lighten(@pink, 30%);
+@pink-dark: darken(@pink, 15%);
+@pink-darker: darken(@pink, 30%);
+//Greens
 @green: #82b542;
-@black: rgba(0, 0, 0, 0.2);
-@light-black: rgba(0, 0, 0, 0.5);
+@green-light: lighten(@green, 15%);
+@green-lighter: lighten(@green, 30%);
+@green-dark: darken(@green, 15%);
+@green-darker: darken(@green, 30%);
+//Reds
+@red: #ff3535;
+@red-light: lighten(@red, 15%);
+@red-lighter: lighten(@red, 30%);
+@red-dark: darken(@red, 15%);
+@red-darker: darken(@red, 30%);
+//Blues
+@blue: #27b1ea;
+@blue-light: lighten(@blue, 15%);
+@blue-lighter: lighten(@blue, 30%);
+@blue-dark: darken(@blue, 15%);
+@blue-darker: darken(@blue, 30%);
+//Yelows
+@yellow: #ccd100;
+@yellow-light: lighten(@yellow, 15%);
+@yellow-lighter: lighten(@yellow, 30%);
+@yellow-dark: darken(@yellow, 15%);
+@yellow-darker: darken(@yellow, 30%);
 
-.pink-border {
-    border-color: @pink;
-}
-
-.pink-background {
-    background: @pink;
-}
-.pink-color {
-    color: @pink;
-}
+@white: #fff;
+@black: #000;
+@black-opacity: rgba(0, 0, 0, .3);
+@white-opacity: rgba(255, 255, 255, .85);

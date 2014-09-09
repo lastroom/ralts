@@ -29,3 +29,94 @@
 .icon-edit:before {
     content: "\e604";
 }
+
+.icon-help:before {
+    content: "\e605";
+}
+
+.icon-location:before {
+    content: "\e606";
+}
+
+.rating f, .rating h, .rating e {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background-image: url("../img/sprites.png");
+    background-repeat: no-repeat;
+}
+
+.rating f {
+    background-position: 0 0;
+}
+.rating h {
+    background-position: -18px 0;
+}
+.rating e {
+    background-position: -36px 0;
+}
+
+.hotel-details .amenities a {
+    position: relative;
+    padding: 3px 2px 3px 30px;
+    margin-left: 10px;
+    color: @pink;
+}
+
+.hotel-details .amenities a::before {
+    content: "----";
+    color: rgba(0,0,0,0);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/sprites.png");
+    background-repeat: no-repeat;
+    /*margin-right: 5px;
+    display: inline-block;
+    background-image: url("../img/sprites.png");
+    background-repeat: no-repeat;*/
+}
+
+.hotel-details .amenities a.airConditioned::before {
+     background-position: -150px -47px;
+}
+.hotel-details .amenities a.bar::before {
+     background-position: -25px -47px;
+}
+.hotel-details .amenities a.businessCenter::before {
+     background-position: 0px -72px;
+}
+.hotel-details .amenities a.elevator::before {
+     background-position: -75px -47px;
+}
+.hotel-details .amenities a.restaurant::before {
+     background-position: -175px -47px;
+}
+.hotel-details .amenities a.eventsRoom::before {
+     background-position: -25px -72px;
+}
+.hotel-details .amenities a.parking::before {
+     background-position: -200px -47px;
+}
+.hotel-details .amenities a.pets::before {
+     background-position: -50px -47px;
+}
+.hotel-details .amenities a.tv::before {
+     background-position: -100px -47px;
+}
+.hotel-details .amenities a.wiredInternet::before {
+     background-position: -125px -47px;
+}
+.hotel-details .amenities a.wirelessInternet::before {
+     background-position: 0 -47px;
+}
+// flag to aprobation required
+.icon-flag{
+    background-image: url("../img/sprites.png");
+    background-position: -273px -71px;
+    height: 11px;
+    width: 11px;
+}

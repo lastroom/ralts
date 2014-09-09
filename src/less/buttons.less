@@ -1,95 +1,179 @@
-button {
-    .border-pink;
-    .appearance;
-    padding: 4px;
-    margin: 0;
-    cursor: pointer;
-    min-width: 125px;
-    font-size: @medium;
+a {
+    text-decoration: none;
+    color: @gray;
+    &:hover {
+        opacity: .5;
+    }
+    &:visited {
+        color: @gray;
+    }
 }
 
-button:hover {
-    border: 1px solid @pink;
-}
-
-button:active {
-    background: @pink;
+a.button {
+    text-decoration: none;
+    line-height: 1.2;
     color: @white;
 }
 
-.button-large {
-    min-width: 362px - 28px;
+.button {
+    .appearance;
     display: inline-block;
-    padding: 14px;
-    font-size: @large;
-}
-
-.photo {
-    width: 164px;
-    height: 164px;
-    background: url("photo.png") no-repeat;
-    position: relative;
-}
-
-.tool-buttons {
-    background: @pink;
-    height: 100%;
-    button {
-        height: 50%;
-        i {
-            opacity: .5;
-        }
+    border: 0;
+    text-shadow: 0 0 0 none;
+    padding: 5px 7px;
+    cursor: pointer;
+    border-radius: 6px;
+    background: @gray;
+    color: @white;
+    font-size: @small;
+    img {
+        margin-bottom: -6px;
     }
-    opacity: 0;
     &:hover {
-        opacity: 1;
-        outline: 2px @pink solid;
-        display: block;
-        background: @light-black;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        button {
-            padding-top: 30px;
-            background: none;
-            display: block;
-            border: 0;
-            float: left;
-            width: 50%;
-            margin: 20px 0;
-            height: 124px;
-            color: @alpha-white;
-            .clearfix();
-            &:hover {
-                color: @white;
-                i {
-                    opacity: 1;
-                }
-            }
-        }
-        button:first-child {
-            display: block;
-            border-right: 1px @white solid;
-        }
+        text-decoration: none!important;
+        opacity: .9;
+    }
+    &:focus {
+        outline: 0;
     }
 }
 
-.photo.selected {
-    .tool-buttons {
-        display: none;
-    }
-    .selected-area {
-        padding-top: 60px;
-        text-align: center;
+.button.button-flat {
+    background: @white;
+    color: @gray;
+    &:hover {
+        background: @gray;
         color: @white;
-        background: @light-black;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: ( 164px - 60px );
     }
 }
 
+.button-large {
+    font-size: @x-large;
+    padding: 6px 10px;
+}
+
+.button-small {
+    font-size: @x-small;
+    padding: 2px 4px;
+}
+
+.button-link {
+    background: none;
+    border: 0;
+    color: @gray;
+    border-radius: 0;
+    padding: 0;
+}
+
+.button-link:hover {
+    border-bottom: 1px @gray solid;
+}
+
+.button-primary {
+    background: @pink;
+    color: @white;
+    &:hover {
+        background: @pink-dark;
+    }
+}
+
+.button-primary.button-flat {
+    background: none;
+    color: @pink;
+    border: 1px @pink solid;
+    &:hover {
+        background: @pink;
+        color: @white;
+    }
+}
+
+.button-success {
+    background: @green;
+    color: @white;
+    &:hover {
+        background: @green-dark;
+    }
+}
+
+.button-success.button-flat {
+    background: none;
+    color: @green;
+    border: 1px @green solid;
+    &:hover {
+        background: @green;
+        color: @white;
+    }
+}
+
+.button-fail {
+    background: @red;
+    color: @white;
+    &:hover {
+        background: @red-dark;
+    }
+}
+
+.button-fail.button-flat {
+    background: none;
+    color: @red;
+    border: 1px @red solid;
+    &:hover {
+        background: @red;
+        color: @white;
+    }
+}
+
+.button-warning {
+    background: @yellow;
+    color: @white;
+    &:hover {
+        background: @yellow-dark;
+    }
+}
+
+.button-warning.button-flat {
+    background: none;
+    color: @yellow;
+    border: 1px @yellow solid;
+    &:hover {
+        background: @yellow;
+        color: @white;
+    }
+}
+
+.button-ok {
+    background: @blue;
+    color: @white;
+    &:hover {
+        background: @blue-dark;
+    }
+}
+
+.button-ok.button-flat {
+    color: @blue;
+    background: none;
+    border: 1px @blue solid;
+    &:hover {
+        background: @blue;
+        color: @white;
+    }
+}
+
+.button-clean {
+    border: 1px @white solid;
+    color: @white;
+    background: rgba(0,0,0,0);
+    &:hover {
+        background: @white;
+        color: @gray;
+    }
+}
+
+.button-extend {
+    min-width: 300px;
+}
+
+a ~ u {
+    border-bottom: 0!important;
+    text-decoration: none!important;
+}

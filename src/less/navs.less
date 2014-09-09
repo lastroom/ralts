@@ -5,10 +5,58 @@
     border: none;
 }
 
+nav a {
+    margin-right: 10px;
+}
+
+nav a:last-child {
+    margin: 0;
+}
+
 .nav li {
     border: none;
     background: none;
-    margin-right: 20px;
     display: inline-block;
+    margin-right: 10px;
 }
 
+.nav-list {
+    list-style: none;
+    li {
+        cursor: pointer;
+        a {
+            padding: 10px 0;
+            width: 100%;
+            display: block;
+            border-top: 1px @white solid;
+            border-bottom: 1px @white solid;
+            .row {
+                margin-bottom: 0;
+                position: relative;
+            }
+            i {
+                opacity: 0;
+                color: @pink;
+                position: absolute;
+                right: 10px;
+            }
+            small {
+                opacity: .5;
+            }
+        }
+        a:hover {
+            border-top: 1px @pink solid;
+            border-bottom: 1px @pink solid;
+            i {
+                opacity: 1;
+            }
+            small {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.nav-list-large {
+    font-size: @x-large;
+}

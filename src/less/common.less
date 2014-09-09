@@ -1,44 +1,108 @@
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    outline: 0;
-}
-
 body, html {
     background-color: @white;
     margin: 0;
     padding: 0;
     height: 100%;
     color: @gray;
-    font-size: @medium;
-    font-family: @font-regular;
+    font-size: @small;
+    font-family: regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.428;
+    -webkit-font-smoothing: antialiased;
 }
 
-h1 {
-    font-size: @x-large;
-    color: @pink;
-}
-
-h2 {
+h1, .h1 {
     font-size: @xx-large;
-    font-weight: normal;
 }
 
-h3 {
+h2, .h2 {
+    font-size: @x-large;
+}
+
+h3, .h3 {
     font-size: @large;
 }
 
-h4 {
-    font-family: @font-light;
+h4, .h4 {
+    font-size: @medium;
+}
+
+h5, .h5 {
     font-size: @small;
 }
 
-a {
-    color: @gray;
-    text-decoration: none;
-    border-bottom: 2px none solid;
-    &:hover {
-        border-bottom: 2px @pink solid;
-    }
+h6, .h6 {
+    font-size: @x-small;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin: 10px 0;
+    font-family: regular;
+}
+
+small, .small {
+    font-size: .65em;
+}
+
+mark {
+    background: yellow;
+}
+
+p {
+    font-size: @small;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: @gray-lighter;
+}
+
+hr.dotted {
+    height: 0;
+    border: 0;
+    background: none;
+    border-top: @gray 1px dotted;
+}
+
+hr.dashed {
+    height: 0;
+    border: 0;
+    background: none;
+    border-top: @gray 1px dashed;
+}
+
+tr.active, div.active, span.active {
+    background: @gray-lighter;
+    color: @gray-dark;
+}
+tr.success, div.success, span.success {
+    background: @green-lighter;
+    color: @green-dark;
+}
+tr.info, div.info, span.info {
+    background: @blue-lighter;
+    color: @blue-dark;
+}
+tr.warning, div.warning, span.warning {
+    background: @yellow-lighter;
+    color: @yellow-dark;
+}
+tr.danger, div.danger, span.danger {
+    background: @red-lighter;
+    color: @red-dark;
+}
+
+div.active, div.success, div.info, div.warning, div.danger {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: @white!important;
+}
+
+.clear {
+    .clearfix();
 }

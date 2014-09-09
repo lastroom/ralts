@@ -1,15 +1,3 @@
-@columns: 12;
-@marginWidth: 20px;
-@columnWidth: 80px;
-@gutterWidth: 20px;
-
-
-@grid-background: none;
-@row-background: none;
-@colum-background: none;
-
-
-
 .clearfix() {
     *zoom:1;
     
@@ -23,18 +11,22 @@
     }
 }
 
-.border {
-    border: 1px @medium-gray solid;
-}
-.border-pink {
-    border: 1px @pink solid;
-    background: @white;
-    color: @pink;
-}
-
 .appearance {
     -moz-appearance:none;
     -webkit-appearance:none;
     -o-appearance:none;
     appearance: none;
 }
+
+
+@grid-background: none;
+@row-background: none;
+@column-background: none;
+
+//Font size
+@x-small: 12px;
+@small: 14px;
+@medium: 18px;
+@large: 24px;
+@x-large: 30px;
+@xx-large: 36px;

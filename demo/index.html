@@ -5,118 +5,283 @@
     <link rel="stylesheet" type="text/css" href="../build/ralts.css" />
 </head>
 <body>
-    <div class="photo">
-        <div class="tool-buttons">
-            <button>
-                <i class="icon-choose"></i>
-                <p>Choose</p>
-            </button>
-            <button>
-                <i class="icon-cross"></i>
-                <p>Delete</p>
-            </button>   
-        </div>
-    </div>
-    <div class="photo selected">
-        <div class="selected-area">
-            <i class="icon-choose"></i>
-            <p>Portrait photo</p>
-        </div>
-        <div class="tool-buttons">
-            <button>
-                <i class="icon-choose"></i>
-                <p>Choose</p>
-            </button>
-            <button>
-                <i class="icon-delete"></i>
-                <p>Delete</p>
-            </button>   
-        </div>
-    </div>
-    <h1>Hotel name</h1>
-    <h2>Section title<h2>
-    <h3>Menu title</h3>
-    <h3>
-        <a href="#">Menu title</a>
-    </h3>
-    <a href="">Link</a>
-    <h4>Footer Title</h4>
-    <div class="help-text">Help text</div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non viverra felis.</p>
-    <input type="text" placeholder="Your Name">
-    <input type="text" disabled value="Disable">
-    <input type="text" readonly value="Readonly">
-    <hr>
-    <hr class="dashed">
-    <select name="Hola">
-        <option value="">-------</option>
-        <option value="1">fi</option>
-        <option value="2">3</option>
-        <option value="3">4</option>
-    </select>
-    <br>
-    <div class="input-append">
-        <span>$</span>
-        <input type="text" placeholder="000000">
-    </div>
-    <input type="text" placeholder="000000">
-    <div>
-        <input type="checkbox" name="Hey" value="Hotel"><label>hey</label>
-    </div>
-    <button>Añadir otro</button>
-    <button class="button-large">Finalizar</button>
-    <button class="button-delate">Finalizar</button>
-    <button class="button-save">Finalizar</button>
-    <table>
-        <thead>
-            <tr>
-                <th>Tipo de Cuarto</th>
-                <th>Disponibilidad</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>132492343232</td>
-                <td>3039202</td>
-            </tr>
-            <tr>
-                <td>1234234234</td>
-                <td>3039202</td>
-            </tr>
-            <tr>
-                <td>1234234234</td>
-                <td>3039202</td>
-            </tr>
-            <tr>
-                <td>132492343232</td>
-                <td>3039202</td>
-            </tr>
-            <tr>
-                <td>1234234234</td>
-                <td>3039202</td>
-            </tr>
-            <tr>
-                <td>1234234234</td>
-                <td>3039202</td>
-            </tr>
-        </tbody>
-    </table>
-    
-    <button class="button-large" data-modal="jonathan-modal">Open modal</button>
+    <div class="container">
+        <div class="grid">
+            <div class="row">
+                <div class="column-12">
+                    <h1 class="visible-desktop">Visible Desktop</h1>
+                    <h1 class="visible-tablet">Visible Tablet</h1>
+                    <h1 class="visible-phone">Visible Phone</h1>
+                    <h1 class="text-highlight text-center">Heading</h1>
+                    <h1>Heading <small>Secondary text</small></h1>
+                    <h2>Heading <small>Secondary text</small><h2>
+                    <h3>Heading <small>Secondary text</small></h3>
+                    <h4>Heading <small>Secondary text</small></h4>
+                    <h5>Heading <small>Secondary text</small></h5>
+                    <h1 class="text-highlight text-center">Colors</h1>
+                    <h1 class="text-gray-darker">Gray darker</h1>
+                    <h1 class="text-gray-dark">Gray dark<h1>
+                    <h1 class="text-gray">Gray</h1>
+                    <h1 class="text-gray-light">Gray light</h1>
+                    <h1 class="text-gray-lighter">Gray ligher</h1>
+                    <h1 class="text-pink-darker">Pink darker</h1>
+                    <h1 class="text-pink-dark">Pink dark<h1>
+                    <h1 class="text-pink">Pink</h1>
+                    <h1 class="text-pink-light">Pink light</h1>
+                    <h1 class="text-pink-lighter">Pink ligher</h1>
+                    <h1 class="text-green-darker">Green darker</h1>
+                    <h1 class="text-green-dark">Green dark<h1>
+                    <h1 class="text-green">Green</h1>
+                    <h1 class="text-green-light">Green light</h1>
+                    <h1 class="text-green-lighter">Green ligher</h1>
+                    <h1 class="text-blue-darker">Blue darker</h1>
+                    <h1 class="text-blue-dark">Blue dark<h1>
+                    <h1 class="text-blue">Blue</h1>
+                    <h1 class="text-blue-light">Blue light</h1>
+                    <h1 class="text-blue-lighter">Blue ligher</h1>
+                    <h1 class="text-red-darker">Red darker</h1>
+                    <h1 class="text-red-dark">Red dark<h1>
+                    <h1 class="text-red">Red</h1>
+                    <h1 class="text-red-light">Red light</h1>
+                    <h1 class="text-red-lighter">Red ligher</h1>
+                    <h1 class="text-highlight text-center">Paragraphs</h1>
+                    <p><strong>Lorem</strong> <i>ipsum</i> dolor sit amet, <ins>consectetur adipiscing</ins> elit. <u>Pellentesque</u> non viverra felis. Lorem ipsum dolor sit amet, <mark>consectetur adipiscing elit</mark>. Pellentesque non viverra felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non viverra felis. <del>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</del> Pellentesque non <s>viverra</s> felis.</p>
+                    <p class="h3"><strong>Lorem</strong> <i>ipsum</i> dolor sit amet, <ins>consectetur adipiscing</ins> elit. <u>Pellentesque</u> non viverra felis. Lorem ipsum dolor sit amet, <mark>consectetur adipiscing elit</mark>. Pellentesque non viverra felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non viverra felis. <del>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</del> Pellentesque non <s>viverra</s> felis.</p>
+                    <h1 class="text-highlight text-center">Forms</h1>
+                    <form action="" class="form">
+                        <input type="text" placeholder="Your Name">
+                        <input type="text" disabled value="Disable">
+                        <input type="text" readonly value="Readonly">
+                    </form>
+                    <select name="Hola">
+                        <option value="">-------</option>
+                        <option value="1">fi</option>
+                        <option value="2">3</option>
+                        <option value="3">4</option>
+                    </select>
+                    <br>
+                    <div class="input-prepend">
+                        <span>$</span>
+                        <input type="text" placeholder="000000">
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Hey" value="Hotel"> <label>hey</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="Hey" value="Hotel"> <label>hey</label>
+                    </div>
+                    <h1 class="text-highlight text-center">Buttons</h1>
+                    <button class="button button-primary button-small">Button</button>
+                    <button class="button button-primary">Button</button>
+                    <button class="button button-primary button-large">Button</button>
+                    <button class="button button-small">Button</button>
+                    <button class="button">Button</button>
+                    <button class="button button-large">Button</button>
+                    <button class="button button-success button-small">Button</button>
+                    <button class="button button-success">Button</button>
+                    <button class="button button-success button-large">Button</button>
+                    <button class="button button-fail button-small">Button</button>
+                    <button class="button button-fail">Button</button>
+                    <button class="button button-fail button-large">Button</button>
+                    <button class="button button-ok button-small">Button</button>
+                    <button class="button button-ok">Button</button>
+                    <button class="button button-ok button-large">Button</button>
+                    <a href="" class="button button-success button-small">Button link</a>
+                    <a href="" class="button button-success">Button link</a>
+                    <a href="" class="button button-success button-large">Button link</a>
+                    <h1 class="text-highlight text-center">Buttons flat</h1>
+                    <button class="button button-primary button-small button-flat">Button</button>
+                    <button class="button button-primary button-flat">Button</button>
+                    <button class="button button-primary button-large button-flat">Button</button>
+                    <button class="button button-small button-flat">Button</button>
+                    <button class="button button-flat">Button</button>
+                    <button class="button button-large button-flat">Button</button>
+                    <button class="button button-success button-small button-flat">Button</button>
+                    <button class="button button-success button-flat">Button</button>
+                    <button class="button button-success button-large button-flat">Button</button>
+                    <button class="button button-fail button-small button-flat">Button</button>
+                    <button class="button button-fail button-flat">Button</button>
+                    <button class="button button-fail button-large button-flat">Button</button>
+                    <button class="button button-ok button-small button-flat">Button</button>
+                    <button class="button button-ok button-flat">Button</button>
+                    <button class="button button-ok button-large button-flat">Button</button>
+                    <a href="#" class="button button-success button-small button-flat">Button link</a>
+                    <a href="#" class="button button-success button-flat">Button link</a>
+                    <a href="#" class="button button-success button-large button-flat">Button link</a>
+                    <a href="#" class="h1">Link text</a>
+                    <a href="#" class="h2">Link text</a>
+                    <a href="#" class="h3">Link text</a>
+                    <a href="#" class="h4">Link text</a>
+                    <a href="#" class="h5">Link text</a>
+                    <a href="#" class="h6">Link text</a>
+                    <a href="#">Link text</a>
+                    <h1 class="text-highlight text-center">Tables</h1>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Tipo de Cuarto</th>
+                                <th>Disponibilidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>132492343232</td>
+                                <td>3039202</td>
+                            </tr>
+                            <tr>
+                                <td>1234234234</td>
+                                <td>3039202</td>
+                            </tr>
+                            <tr>
+                                <td>1234234234</td>
+                                <td>3039202</td>
+                            </tr>
+                            <tr>
+                                <td>132492343232</td>
+                                <td>3039202</td>
+                            </tr>
+                            <tr>
+                                <td>1234234234</td>
+                                <td>3039202</td>
+                            </tr>
+                            <tr>
+                                <td>1234234234</td>
+                                <td>3039202</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-    <div id="jonathan-modal" class="modal">
-        <div class="modal-dialog">
-            <div class="modal-header">
-                <button class="close">
-                    <i class="icon-cross"></i>
-                </button>
-                <h2>Editar</h2>
-                <p>2014-04-07 al 2014-04-16<br>
-                Habitación Sencilla</p>
-                <hr>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Tipo de Cuarto</th>
+                                <th>Disponibilidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>132492343232</td>
+                                <td>3039202</td>
+                            </tr>
+                            <tr>
+                                <td>1234234234</td>
+                                <td>3039202</td>
+                            </tr>
+                            <tr>
+                                <td>1234234234</td>
+                                <td>3039202</td>
+                            </tr>
+                            <tr>
+                                <td>132492343232</td>
+                                <td>3039202</td>
+                            </tr>
+                            <tr>
+                                <td>1234234234</td>
+                                <td>3039202</td>
+                            </tr>
+                            <tr>
+                                <td>1234234234</td>
+                                <td>3039202</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tipo de Cuarto</th>
+                                <th>Disponibilidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>132492343232</td>
+                                <td>3039202</td>
+                            </tr>
+                            <tr>
+                                <td>1234234234</td>
+                                <td>3039202</td>
+                            </tr>
+                            <tr>
+                                <td>1234234234</td>
+                                <td>3039202</td>
+                            </tr>
+                            <tr>
+                                <td>132492343232</td>
+                                <td>3039202</td>
+                            </tr>
+                            <tr>
+                                <td>1234234234</td>
+                                <td>3039202</td>
+                            </tr>
+                            <tr>
+                                <td>1234234234</td>
+                                <td>3039202</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h1 class="text-highlight text-center">Separators</h1>
+                    <hr>
+                    <hr class="dotted">
+                    <hr class="dashed">
+                    <h1 class="text-highlight text-center">Header</h1>
+                    <header class="header">
+                        <div class="inner-header">
+                            <a class="logo" href=""><img src="" alt=""></a>
+                            <section class="session">
+                                <img src="" alt="">
+                                <strong>Username</strong>
+                                <br>
+                                <nav class="tools">
+                                    <a href="">Tool item</a>
+                                    <a href="">Tool item</a>
+                                    <a href="">Tool item</a>
+                                </nav>
+                            </section>
+                            <nav class="menu">
+                                <a href="">Menu item</a>
+                                <a href="">Menu item</a>
+                                <a href="">Menu item</a>
+                                <a href="">Menu item</a>
+                                <a href="">Menu item</a>
+                            </nav>
+                        </div>
+                    </header>
+                    <h1 class="text-highlight text-center">Footer</h1>
+                    <footer class="footer">
+                        <div class="inner-footer">
+                            <nav class="nav">
+                                <a href="#">Footer item</a>
+                                <a href="#">Footer item</a>
+                                <a href="#">Footer item</a>
+                                <a href="#">Footer item</a>
+                                <a href="#">Footer item</a>
+                            </nav>
+                            <section class="copyright">
+                                2012 - 2014 &copy; LastRoom Inc.
+                            </section>
+                        </div>
+                    </footer>
+                    <h1 class="text-highlight text-center">Modals</h1>
+                    <button class="button button-primary button-large" data-modal="jonathan-modal">Open modal</button>
+
+                    <div id="jonathan-modal" class="modal">
+                        <div class="modal-dialog">
+                            <div class="modal-header">
+                                <button class="close">
+                                    <i class="icon-cross"></i>
+                                </button>
+                                <h2>Editar</h2>
+                                <p>2014-04-07 al 2014-04-16<br>
+                                Habitación Sencilla</p>
+                                <hr>
+                            </div>
+                            <div class="modal-body">Cantidad</div>
+                            <div class="modal-footer"><button>Guardar</button></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">Cantidad</div>
-            <div class="modal-footer"><button>Guardar</button></div>
         </div>
     </div>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>

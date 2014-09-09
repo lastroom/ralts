@@ -1,26 +1,24 @@
-table{
-    background: @medium-gray;
+.table {
     color: @gray;
     border-collapse:collapse;
     width: 100%;
     text-align: left;
-}
-
-td {
-    padding: 10px 14px;
-    border-left: 1px @white solid;
-    &:first-child {
-        border-left: none;
+    td, th {
+        border-top: 1px @gray-lighter solid;
+        padding: 10px 14px;
+    }
+    th {
+        font-family: regular;
     }
 }
 
-table tr:nth-child(2n) td{
-    background: @white;
+.table-bordered {
+    border: 1px @gray-lighter solid;
+    td {
+        border-radius: 6px;
+    }
 }
 
-th {
-    padding: 10px 14px;
-    padding: 10px 14px;
-    background: @white;
-    font-weight: normal;
+.table-striped tr:nth-child(2n) td{
+    background: @gray-lighter;
 }
